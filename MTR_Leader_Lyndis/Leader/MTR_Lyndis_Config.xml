@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Config -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-07 9:19:26 -->
+<GameData>
+	<Players>
+		<Row>
+			<!--Civilization-->
+			<Domain>Players:StandardPlayers</Domain>
+			<CivilizationType>CIVILIZATION_MTR_SACAE</CivilizationType>
+			<CivilizationName>LOC_CIVILIZATION_MTR_SACAE_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION_LITE</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationAbilityIcon>
+			<!--Leader-->
+			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
+			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION_LITE</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
+		</Row>
+
+		<Row>
+			<!--Civilization-->
+			<Domain>Players:Expansion1_Players</Domain>
+			<CivilizationType>CIVILIZATION_MTR_SACAE</CivilizationType>
+			<CivilizationName>LOC_CIVILIZATION_MTR_SACAE_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION_LITE</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationAbilityIcon>
+			<!--Leader-->
+			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
+			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION_LITE</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
+		</Row>
+
+		<Row>
+			<!--Civilization-->
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_MTR_SACAE</CivilizationType>
+			<CivilizationName>LOC_CIVILIZATION_MTR_SACAE_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_MTR_SACAE_UA_DESCRIPTION_LITE</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_MTR_SACAE</CivilizationAbilityIcon>
+			<!--Leader-->
+			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
+			<LeaderName>LOC_LEADER_MTR_LYNDIS_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_MTR_LYNDIS</LeaderIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION_LITE</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_MTR_LYNDIS</LeaderAbilityIcon>
+			<Portrait>FALLBACK_NEUTRAL_MTR_LYNDIS_UI</Portrait>
+			<PortraitBackground>LEADER_MTR_LYNDIS_BACKGROUND</PortraitBackground>
+		</Row>
+	</Players>
+
+	
+	<PlayerItems>
+		<!--Vanilla-->
+		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+		<!--Expansion1-->
+		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+		<!--Expansion2-->
+		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+	</PlayerItems>
+
+</GameData>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>451</build>
+		<revision>343</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="MTR_Lyndis_LeaderUI"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="LEADER_MTR_LYNDIS_NEUTRAL"/>
+			<m_ObjectName text="LEADER_MTR_LYNDIS_NEUTRAL"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LEADER_MTR_LYNDIS_BACKGROUND"/>
+			<m_ObjectName text="LEADER_MTR_LYNDIS_BACKGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="FALLBACK_NEUTRAL_MTR_LYNDIS_UI"/>
+			<m_ObjectName text="FALLBACK_NEUTRAL_MTR_LYNDIS_UI"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

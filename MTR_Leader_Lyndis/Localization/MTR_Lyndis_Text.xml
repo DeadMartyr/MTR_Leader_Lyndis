@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Text -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-13 13:38:33 -->
+<GameData>
+	<LocalizedText>
+		<Row Language="en_US"	Tag="LOC_LEADER_MTR_LYNDIS_NAME"						Text="Lyndis"/>
+		
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"				Text="Lady Of The Wind"/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"		Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. (Grassland = 5, Plains = 10, hills halve these amounts) [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind in that city. [NEWLINE]Every 4 'points' grants a 'stack', points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0) "/>
+		<Row Language="en_US"	Tag="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION_LITE"	Text="Grants flat production boost to a city's [ICON_PRODUCTION] progress for every tile claimed through purchases or by expansion. [NEWLINE][NEWLINE]Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] to cities for every 'stack' of Lady Of The Wind in that city."/>
+
+
+		<Row Language="en_US"	Tag="LOC_LOADING_INFO_LEADER_MTR_LYNDIS"				Text="Loading Info Placeholder"/>
+
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			FIRST MEET			= -->
+		<!-- ============================================================ -->
+		<!--First AI Line-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_FIRST_MEET_LEADER_MTR_LYNDIS_ANY"							Text="Greetings! I am Lyndis, the Unifier of all the Sacaen Tribes--but I'd rather you just call me Lyn."/>
+		<!--AI invitation to visit nearby city-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MTR_LYNDIS_ANY"			Text="Sacae isn't exactly centralized, most of the tribes are nomadic, but we do have a few permanent settlements like Bulgar. In fact, there's one nearby. Would you like to visit?"/>
+		<!--AI accepts human invitation-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MTR_LYNDIS_ANY"	Text="Wonderful! I'm sure some of the hunters would be able to catch a few buffalo fromm the herd for a feast."/>
+		<!--AI invitation to exchange Capital Information-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MTR_LYNDIS_ANY"		Text="Would you like to exchange information about our capitals? We don't have an official capital per se, but we do have a large permanent settlement named Bulgar that's commonly accepted as the de facto capital."/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Greetings			= -->
+		<!-- ============================================================ -->
+		<Row Language="en_US"	Tag="LOC_DIPLO_GREETING_LEADER_MTR_LYNDIS_ANY"								Text="What can I help you with?"/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Delegation			= -->
+		<!-- ============================================================ -->
+		<!--AI Accepts-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"			Text="This will be a great chance for our people to bond. I would be happy to accept."/>
+		<!--AI Rejects-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"			Text="I would have to say no, Sacae will not be recieving any delegations--atleast for now."/>
+		<!--AI Requests-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MTR_LYNDIS_ANY"					Text="I have arranged for a small delegation. You may find it a bit odd but these trinkets are very important to our culture, would you accept it?"/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Open Borders		= -->
+		<!-- ============================================================ -->
+		<!--AI Accepts From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"		Text="Yes! If you want, we could chase the wind together on our horses... you do know how to ride horseback, don't you?"/>
+		<!--AI Rejects From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"		Text="I cannot see how I could allow you to walk our plains and by embraced by the very winds we hold so precious."/>
+		<!--AI Requests From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MTR_LYNDIS_ANY"					Text="My people wish to follow the wind on their mounts across all the great plains of the world. Would you be able to allow us to be able to ride through your borders."/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-		Declare Friendship		= -->
+		<!-- ============================================================ -->
+		<!--AI Accepts From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"		Text="I would be glad to call you a true friend, I accept."/>
+		<!--AI Rejects From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"		Text="I'm sorry but I cannot be sure if you are truely have good intentions for Sacae right now."/>
+		<!--AI Requests From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MTR_LYNDIS_ANY"				Text="I believe that declaring a friendship between our nations would be the a splendid idea, don't you think?"/>
+		<!--Human Accepts AI Request-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MTR_LYNDIS_ANY"			Text="I'm so glad you agree! Let's celebrate!"/>
+		<!--Human Rejects AI Request-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MTR_LYNDIS_ANY"			Text="Oh... sorry for mistaking our bond."/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Alliance			= -->
+		<!-- ============================================================ -->
+		<!--AI Requests From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MTR_LYNDIS_ANY"					Text="When I unified all the Tribes of Sacae I learned exactly how important alliances are. If we had not worked together then we would stil be squabbling and that is exactly why the nobles viewed Sacaens as barbaric and lesser. Now Sacae is a major civilization and is proof that people can achieve great things when they band together. I would like to declare an alliance between your nation and mine, would you accept?"/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-		Kudos & Warnings		= -->
+		<!-- ============================================================ -->
+		<!--AI Warns for border troops-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MTR_LYNDIS_ANY"		Text="My people tell me that your troops are by our lands. Sacae has had enough of soldiers and nobles razing the plains we depend on, remove your troops."/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Trade				= -->
+		<!-- ============================================================ -->
+		<!--AI Accepts Deal-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MTR_LYNDIS_ANY"				Text="I would be happy to accept such a deal."/>
+		<!--AI Rejects Deal-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MTR_LYNDIS_ANY"				Text="I will not accept such a deal, I'm sorry but I have my own nation to think about."/>
+
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Denounce			= -->
+		<!-- ============================================================ -->
+		<!--From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"					Text="My people have lived their entire lives dismissed as savages by nobles. Your words mean nothing."/>
+		<!--From AI-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MTR_LYNDIS_ANY"						Text="I am angered by the fact that civilizations with such immoral actions like yours have been the norm for throughout history while mine have been constantly pushed down. I hope you will soon be forgotten."/>
+		
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			DOW					= -->
+		<!-- ============================================================ -->
+		<!--Human Declares War-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"				Text="My people will not be stifled by any amount of warmongering or tryanny. As long as we can ride guided by the wind our arrows will fly straight into your heart."/>
+		<!--AI Declares War-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MTR_LYNDIS_ANY"					Text="You are despicable and I will do this world a favor by ridding you of it."/>
+		
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Make Peace			= -->
+		<!-- ============================================================ -->
+		<!--AI Accepts From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MTR_LYNDIS_ANY"				Text="I would be glad to accept peace, maybe we can work together to start anew--with this war in the past."/>
+		<!--AI Refuses From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MTR_LYNDIS_ANY"				Text="Sacae cannot accept peace under these circumstances."/>
+		<!--AI Requests From Human-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MTR_LYNDIS_ANY"					Text="My people no longer wish for this bloodshed to continue. Please realize that this war is pointless."/>
+		
+		<!-- ============================================================ -->
+		<!-- =			Diplomacy		-			Defeat				= -->
+		<!-- ============================================================ -->
+		<!--AI is Defeated-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MTR_LYNDIS_ANY"						Text="I have let down so many people that have trusted me with their hopes and dreams. All I wished for was for Sacae to grow into a prosperous nation and be known throughout the world--but in the end I failed. Please, take my life but spare my subjects. They deserved a better leader..."/>
+		<!--Player is Defeated-->
+		<Row Language="en_US"	Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MTR_LYNDIS_ANY"						Text="I have let down so many people that have trusted me with their hopes and dreams. All I wished for was for Sacae to grow into a prosperous nation and be known throughout the world--but in the end I failed. Please, take my life but spare my subjects. They deserved a better leader..."/>
+		
+		<!-- ============================================================ -->
+		<!-- =			DummyBuildings	- MTR_Lyndis_Dummies.xml		= -->
+		<!-- ============================================================ -->
+		<!--1 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_NAME"			Text="Lady Of The Wind (1 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<!--2 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_NAME"			Text="Lady Of The Wind (2 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<!--3 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_NAME"			Text="Lady Of The Wind (3 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<!--4 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_NAME"			Text="Lady Of The Wind (4 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<!--5 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_NAME"			Text="Lady Of The Wind (5 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+		<!--6 Stack-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_NAME"			Text="Lady Of The Wind (6 Stack)"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_DESCRIPTION"	Text="Lyndis' UA. Grants +1 [ICON_FOOD] Food and +1 [ICON_CULTURE] Culture for every stack. [NEWLINE][NEWLINE]Every 4 'points' grants a stack, points are tallied from all owned tiles of that city (Plains = 2, PlainsHills = 1, Other = 0)"/>
+
+	</LocalizedText>
+</GameData>

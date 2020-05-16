@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Leader -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-07 9:20:39 -->
+<GameData>
+
+	<!--Defines Lyndis as a TYPE of Leader (Which is the KIND of overall "thing") I condensed the Row to 1 line after I felt certain I can do so and not fuck it up-->
+	<Types>
+		<Row Type="LEADER_MTR_LYNDIS"			Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_MTR_LYNDIS_UA"	Kind="KIND_TRAIT"/>
+	</Types>
+
+	<!--Defines Lyndis as a Leader of Sacae-->
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_MTR_SACAE" LeaderType="LEADER_MTR_LYNDIS" CAPITALNAME="LOC_CITY_NAME_MTR_SACAE_1"/>
+	</CivilizationLeaders>
+
+	<!--Define Lyndis in "Leaders"-->
+	<Leaders>
+		<Row>
+			<LeaderType>LEADER_MTR_LYNDIS</LeaderType>
+			<Name>LOC_LEADER_MTR_LYNDIS_NAME</Name>
+			<Sex>Female</Sex>
+			<InheritFrom>LEADER_DEFAULT</InheritFrom>
+		</Row>
+	</Leaders>
+
+	<LeaderTraits>
+		<Row LeaderType="LEADER_MTR_LYNDIS"	TraitType="TRAIT_LEADER_MTR_LYNDIS_UA"/>
+	</LeaderTraits>
+	<Traits>
+		<Row TraitType="TRAIT_LEADER_MTR_LYNDIS_UA"	Name="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_NAME"	Description="LOC_TRAIT_LEADER_MTR_LYNDIS_UA_DESCRIPTION"/>
+	</Traits>
+
+</GameData>
+

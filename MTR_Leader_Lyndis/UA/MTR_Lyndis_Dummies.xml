@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Dummies -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-04-19 19:34:27 -->
+<GameData>
+	<!--These are Dummy Buildings used by Element 2 of "MTR_Lyndis_Scripts.lua"-->
+
+	<Types>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"	Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"	Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3"	Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4"	Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5"	Kind="KIND_BUILDING"/>
+		<Row Type="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6"	Kind="KIND_BUILDING"/>
+	</Types>
+
+	<Buildings>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6"	Name="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+	</Buildings>
+
+	<Building_YieldChanges>
+		<!--1 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"	YieldType="YIELD_FOOD"		YieldChange="1"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"	YieldType="YIELD_CULTURE"	YieldChange="1"/>
+		<!--2 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"	YieldType="YIELD_FOOD"		YieldChange="2"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"	YieldType="YIELD_CULTURE"	YieldChange="2"/>
+		<!--3 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3"	YieldType="YIELD_FOOD"		YieldChange="3"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK3"	YieldType="YIELD_CULTURE"	YieldChange="3"/>
+		<!--4 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4"	YieldType="YIELD_FOOD"		YieldChange="4"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK4"	YieldType="YIELD_CULTURE"	YieldChange="4"/>
+		<!--5 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5"	YieldType="YIELD_FOOD"		YieldChange="5"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK5"	YieldType="YIELD_CULTURE"	YieldChange="5"/>
+		<!--6 Stack Building Yields-->
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6"	YieldType="YIELD_FOOD"		YieldChange="6"/>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UA_DUMMY_STACK6"	YieldType="YIELD_CULTURE"	YieldChange="6"/>
+	</Building_YieldChanges>
+</GameData>

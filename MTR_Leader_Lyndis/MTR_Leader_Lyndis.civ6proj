@@ -2,11 +2,11 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Fire Emblem [ICON_GREATPERSON]</Name>
+    <Name>[COLOR_FLOAT_GOLD]Fire Emblem[ENDCOLOR] - [ICON_GREATPERSON] Lyndis</Name>
     <Guid>bba8e654-9f78-45b4-ad04-e0efae25a92b</Guid>
     <ProjectGuid>06433ea0-85b4-4f49-ba0c-c57b1610424f</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>Introduces [ICON_greatperson] Lyndis as a Leader for the [ICON_government] Sacaen Civilization.[NEWLINE][NEWLINE]Requires the S</Teaser>
+    <Teaser>Introduces [ICON_greatperson] Lyndis as a Leader for the [ICON_government] Sacaen Civilization.</Teaser>
     <Description>Introduces [ICON_greatperson] Lyndis as a Leader for the [ICON_government] Sacaen Civilization.[NEWLINE][NEWLINE]Requires the Sacaean Civilization Mod. This mod is just for the Leader.[NEWLINE][NEWLINE][NEWLINE]Lyndis: Lady of the Wind[NEWLINE][NEWLINE]Grants +1 [ICON_Food] Food and +1 [ICON_Culture] Culture in a city for each "stack" of Lady of the Wind in that city.[NEWLINE]Stacks are determined by the owned tiles of a certain type in that city. Different tiles are weighed differently, the value of the tiles contribute to the amount of stacks a city possesses.[NEWLINE][NEWLINE]Grants a flat [ICON_production] Production boost to a city's build progress for each tile acquired, whether by Plot Purchasing or Cultural Expansion.[NEWLINE][NEWLINE](See Mod Page for exact table regarding how each terrain type is weighted towards these bonuses)</Description>
     <Authors>Martyr</Authors>
     <SpecialThanks>Rarolina, LeeS, Chrisy15, Deliverator</SpecialThanks>
@@ -17,15 +17,134 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssociationData><![CDATA[<Associations>
   <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+  <Dependency type="Mod" title="MTR_Civilization_Sacae" id="3d304339-2777-4b7f-b4c5-c1075ffb9a0b" />
 </Associations>]]></AssociationData>
     <AssemblyName>MTR_Leader_Lyndis</AssemblyName>
     <RootNamespace>MTR_Leader_Lyndis</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="MTR_Lyndis_Database"><File>Leader/MTR_Lyndis_Config.xml</File></UpdateDatabase><UpdateText id="MTR_Lyndis_Text"><File>Localization/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="MTR_Lyndis_Import"><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.tex</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS_UI.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS_UI.tex</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.dds</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.tex</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.dds</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.tex</File><File>Textures/MTR_Lyndis_C_256.dds</File><File>Textures/MTR_Lyndis_C_256.tex</File><File>Textures/MTR_Lyndis_C_32.dds</File><File>Textures/MTR_Lyndis_C_32.tex</File><File>Textures/MTR_Lyndis_C_45.dds</File><File>Textures/MTR_Lyndis_C_45.tex</File><File>Textures/MTR_Lyndis_C_50.dds</File><File>Textures/MTR_Lyndis_C_50.tex</File><File>Textures/MTR_Lyndis_C_55.dds</File><File>Textures/MTR_Lyndis_C_55.tex</File><File>Textures/MTR_Lyndis_C_64.dds</File><File>Textures/MTR_Lyndis_C_64.tex</File><File>Textures/MTR_Lyndis_C_80.dds</File><File>Textures/MTR_Lyndis_C_80.tex</File></ImportFiles><UpdateColors id="MTR_Lyndis_Colors"><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors><UpdateIcons id="MTR_Lyndis_Icons"><File>Icons/MTR_Lyndis_Icons.xml</File></UpdateIcons><UpdateArt id="MTR_Lyndis_Art"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="MTR_Lyndis_Database_IG"><File>Leader/MTR_Lyndis_Leader.xml</File><File>Leader/MTR_Lyndis_Animations.xml</File><File>Leader/MTR_Lyndis_Background.xml</File><File>UA/MTR_Lyndis_Dummies.xml</File></UpdateDatabase><UpdateText id="MTR_Lyndis_Text_IG"><File>Localization/MTR_Lyndis_Text.xml</File></UpdateText><ImportFiles id="MTR_Lyndis_Import_IG"><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS.tex</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS_UI.dds</File><File>Textures/FALLBACK_NEUTRAL_MTR_LYNDIS_UI.tex</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.dds</File><File>Textures/LEADER_MTR_LYNDIS_BACKGROUND.tex</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.dds</File><File>Textures/LEADER_MTR_LYNDIS_NEUTRAL.tex</File><File>Textures/MTR_Lyndis_C_256.dds</File><File>Textures/MTR_Lyndis_C_256.tex</File><File>Textures/MTR_Lyndis_C_32.dds</File><File>Textures/MTR_Lyndis_C_32.tex</File><File>Textures/MTR_Lyndis_C_45.dds</File><File>Textures/MTR_Lyndis_C_45.tex</File><File>Textures/MTR_Lyndis_C_50.dds</File><File>Textures/MTR_Lyndis_C_50.tex</File><File>Textures/MTR_Lyndis_C_55.dds</File><File>Textures/MTR_Lyndis_C_55.tex</File><File>Textures/MTR_Lyndis_C_64.dds</File><File>Textures/MTR_Lyndis_C_64.tex</File><File>Textures/MTR_Lyndis_C_80.dds</File><File>Textures/MTR_Lyndis_C_80.tex</File></ImportFiles><UpdateColors id="MTR_Lyndis_Colors_IG"><File>Leader/MTR_Lyndis_Colors.xml</File></UpdateColors><AddGameplayScripts id="MTR_Lyndis_Scripts_IG"><File>UA/MTR_Lyndis_Scripts.lua</File></AddGameplayScripts><UpdateIcons id="MTR_Lyndis_Icons_IG"><File>Icons/MTR_Lyndis_Icons.xml</File></UpdateIcons><UpdateArt id="MTR_Lyndis_Art_IG"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <None Include="MTR_Leader_Lyndis.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\MTR_Lyndis_ArtDef_LeaderFallbacks.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Icons\MTR_Lyndis_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Animations.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Background.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Colors.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Leader\MTR_Lyndis_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\MTR_Lyndis_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS_UI.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\FALLBACK_NEUTRAL_MTR_LYNDIS_UI.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_BACKGROUND.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_BACKGROUND.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_NEUTRAL.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\LEADER_MTR_LYNDIS_NEUTRAL.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_256.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_256.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_32.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_32.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_45.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_45.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_50.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_50.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_55.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_55.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_64.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_64.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_80.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\MTR_Lyndis_C_80.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UA\MTR_Lyndis_Dummies.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UA\MTR_Lyndis_Scripts.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\MTR_Lyndis_Fallbacks.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\MTR_Lyndis_Icons.xlp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\MTR_Lyndis_LeaderUI.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Leader" />
+    <Folder Include="Localization" />
+    <Folder Include="Icons" />
+    <Folder Include="Textures\" />
+    <Folder Include="UA" />
+    <Folder Include="XLPs\" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>

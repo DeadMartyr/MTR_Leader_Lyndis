@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Colors -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-15 10:42:09 -->
+<GameData>
+	<PlayerColors>
+		<Row>
+			<Type>LEADER_MTR_LYNDIS</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>COLOR_MTR_SACAE_A_PRIMARY</PrimaryColor>
+			<SecondaryColor>COLOR_MTR_SACAE_A_SECONDARY</SecondaryColor>
+			<Alt1PrimaryColor>COLOR_MTR_SACAE_B_PRIMARY</Alt1PrimaryColor>
+			<Alt1SecondaryColor>COLOR_MTR_SACAE_B_SECONDARY</Alt1SecondaryColor>
+			<Alt2PrimaryColor>COLOR_MTR_SACAE_C_PRIMARY</Alt2PrimaryColor>
+			<Alt2SecondaryColor>COLOR_MTR_SACAE_C_SECONDARY</Alt2SecondaryColor>
+			<Alt3PrimaryColor>COLOR_MTR_SACAE_D_PRIMARY</Alt3PrimaryColor>
+			<Alt3SecondaryColor>COLOR_MTR_SACAE_D_SECONDARY</Alt3SecondaryColor>
+		</Row>
+	</PlayerColors>
+</GameData>

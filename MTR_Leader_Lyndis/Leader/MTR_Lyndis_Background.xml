@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_Background -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-03-21 17:05:28 -->
+<!--This isn't in any action yet cause I don't know if the background is a UITexture or LeaderFallback-->
+<GameData>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_MTR_LYNDIS" BackgroundImage="LEADER_MTR_LYNDIS_BACKGROUND.dds"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_MTR_LYNDIS" BackgroundImage="LEADER_MTR_LYNDIS_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	
+</GameData>
