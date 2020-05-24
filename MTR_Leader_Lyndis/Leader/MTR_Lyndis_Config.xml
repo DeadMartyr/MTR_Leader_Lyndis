@@ -68,14 +68,14 @@
 	
 	<PlayerItems>
 		<!--Vanilla-->
-		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
-		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_IMPROVEMENT_MTR_SACAE_UI"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:StandardPlayers"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"				Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
 		<!--Expansion1-->
-		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
-		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_IMPROVEMENT_MTR_SACAE_UI"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion1_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"				Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
 		<!--Expansion2-->
-		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_LEADER_MTR_LYNDIS"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
-		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"		Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
+		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="IMPROVEMENT_MTR_SACAE_UI"	Icon="ICON_IMPROVEMENT_MTR_SACAE_UI"	Name="LOC_IMPROVEMENT_MTR_SACAE_UI_NAME"	Description="LOC_IMPROVEMENT_MTR_SACAE_UI_DESCRIPTION"	SortIndex="10"/>
+		<Row	Domain="Players:Expansion2_Players"	CivilizationType="CIVILIZATION_MTR_SACAE"	LeaderType="LEADER_MTR_LYNDIS"	Type="UNIT_MTR_NOMAD"			Icon="ICON_UNIT_MTR_NOMAD"				Name="LOC_UNIT_MTR_NOMAD_NAME"				Description="LOC_UNIT_MTR_NOMAD_DESCRIPTION"			SortIndex="20"/>
 	</PlayerItems>
 
 </GameData>

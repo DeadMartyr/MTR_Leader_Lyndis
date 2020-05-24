@@ -1,3 +1,13 @@
 Starting AssetCooker...
-This build of the cooker is not able to cook for: 'MacOS'
-Cook completed in 0.027 seconds
+Argument '--shaders' has been deprecated and is no longer used.
+XLP cook starting...
+C:\Users\Angelo\Documents\Firaxis ModBuddy\Civilization VI\MTR_Leader_Lyndis\MTR_Leader_Lyndis\XLPs\MTR_Lyndis_LeaderUI.xlp
+Opened output file: C:\Users\Angelo\Documents\My Games\Sid Meier's Civilization VI\Mods\MTR_Leader_Lyndis\Platforms\MacOS\BLPs/MTR_Lyndis_LeaderUI.blp    For XLP: 'C:\Users\Angelo\Documents\Firaxis ModBuddy\Civilization VI\MTR_Leader_Lyndis\MTR_Leader_Lyndis\XLPs\MTR_Lyndis_LeaderUI.xlp'
+Could not load digest key: ''.  Using mod key to sign BLP.
+Starting 'MTR_Lyndis_LeaderUI'
+Load finished for: 'MTR_Lyndis_LeaderUI' in 0.034 seconds
+Cook finished for: 'MTR_Lyndis_LeaderUI' in 0.469 seconds
+Disk write finished for: 'MTR_Lyndis_LeaderUI' in 0.067 seconds
+Cleanup finished for: 'MTR_Lyndis_LeaderUI' in 0.004 seconds
+XLP cook completed with success.
+Cook completed in 0.594 seconds
