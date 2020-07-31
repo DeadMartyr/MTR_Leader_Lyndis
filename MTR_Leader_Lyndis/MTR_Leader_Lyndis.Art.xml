@@ -7,7 +7,9 @@
 	<artConsumers>
 		<Element>
 			<consumerName text="Units"/>
-			<relativeArtDefPaths/>
+			<relativeArtDefPaths>
+				<Element text="MTR_Lyndis_ArtDef_UH.artdef"/>
+			</relativeArtDefPaths>
 			<libraryDependencies>
 				<Element text="Unit"/>
 				<Element text="VFX"/>
@@ -481,6 +483,7 @@
 			<relativePackagePaths>
 				<Element text="MTR_Lyndis_Icons"/>
 				<Element text="MTR_Lyndis_LeaderUI"/>
+				<Element text="MTR_Lyndis_UH"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

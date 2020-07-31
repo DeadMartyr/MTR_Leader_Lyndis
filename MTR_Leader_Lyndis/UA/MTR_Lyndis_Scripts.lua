@@ -104,12 +104,14 @@ end
 	--Element 2 Control Variables
 	local tValidTerrainOwnedList = 
 	{
-	[GameInfo.Terrains["TERRAIN_PLAINS"].Index] = 2, -- 2 "points" for a plains
-	[GameInfo.Terrains["TERRAIN_PLAINS_HILLS"].Index] = 1 -- 1 "point" for a plains hills
+	[GameInfo.Terrains["TERRAIN_GRASS"].Index] = 2, -- 2 "points" for a grassland
+	[GameInfo.Terrains["TERRAIN_GRASS_HILLS"].Index] = 1, -- 1 "point" for a grassland hill
+	[GameInfo.Terrains["TERRAIN_PLAINS"].Index] = 4, -- 4 "points" for a plains
+	[GameInfo.Terrains["TERRAIN_PLAINS_HILLS"].Index] = 2 -- 2 "point" for a plains hills
 	}
-	local iPointsPerStack = 4;	-- x "Points" gives a "Stack"
-	local iCulturePerStack = 1; -- x Culture per Stack
-	local iFoodPerStack = 1;	-- x Food per Stack
+	local iPointsPerStack = 10;	-- x "Points" gives a "Stack"
+	local iCulturePerStack = 1; -- x Culture per Stack	(Unimplemented, intended for scaling)
+	local iFoodPerStack = 1;	-- x Food per Stack		(Unimplemented, intended for scaling)
 	
 	local iDummyStack1 = GameInfo.Buildings["BUILDING_MTR_LYNDIS_UA_DUMMY_STACK1"].Index;
 	local iDummyStack2 = GameInfo.Buildings["BUILDING_MTR_LYNDIS_UA_DUMMY_STACK2"].Index;
@@ -124,22 +126,22 @@ end
 --Runs on CityTileOwnershipChanged
 --====================================================================
 function MTR_LyndisUA_ExpansionBoost(pCity, pPlot)
-	print("MTR_LyndisUA_ExpansionBoost");
+	--print("MTR_LyndisUA_ExpansionBoost");
 	local iBoostToApply = 0;
-	print(pPlot:GetTerrainType());
+	--print(pPlot:GetTerrainType());
 	
 	if (tValidTerrainExpansionList[pPlot:GetTerrainType()]~=nil) then
-		print("ITS VALID!");
+		--print("ITS VALID!");
 		iBoostToApply = tValidTerrainExpansionList[pPlot:GetTerrainType()];
 	end
 	
 	pCity:GetBuildQueue():AddProgress(iBoostToApply);
-	print("Boost of " .. iBoostToApply);
+	--print("Boost of " .. iBoostToApply);
 end
 
 function MTR_LyndisUA_CityTileOwnershipChanged(owner, cityID)
-	print("MTR_LyndisUA_CityTileOwnershipChanged")
-	print(owner);
+	--print("MTR_LyndisUA_CityTileOwnershipChanged")
+	--print(owner);
 	--print(cityID);
 	
 	if(tValidPlayerList[owner]==true) then
@@ -149,12 +151,12 @@ function MTR_LyndisUA_CityTileOwnershipChanged(owner, cityID)
 		local tCityPlots = GetCityPlots(pCity)
 		if tCityPlots ~= nil then
 			for Item, pPlot in ipairs(tCityPlots) do
-				print(pCity:GetName() .. "| X: " .. pPlot:GetX() .. " Y: " .. pPlot:GetY());
+				--print(pCity:GetName() .. "| X: " .. pPlot:GetX() .. " Y: " .. pPlot:GetY());
 				if (pPlot:GetProperty("TRAIT_LEADER_MTR_LYNDIS_UA") == nil) then
-					print("Tile wasn't acted on before!");
+					--print("Tile wasn't acted on before!");
 					MTR_LyndisUA_ExpansionBoost(pCity, pPlot);
 					pPlot:SetProperty("TRAIT_LEADER_MTR_LYNDIS_UA", 1);
-					print("PropertySet!");
+					--print("PropertySet!");
 				end
 			end
 		end
@@ -174,37 +176,37 @@ end
 --Runs on PlayerTurnDeactivated
 --====================================================================
 function MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired)
-	print("MTR_LyndisUA_StripDummies");
+	--print("MTR_LyndisUA_StripDummies");
 	if ((pCityBuildings:HasBuilding(iDummyStack1) == true) and (iStacksRequired~=1)) then
 		pCityBuildings:RemoveBuilding(iDummyStack1);
-		print("Reset Stacks from 1");
+		--print("Reset Stacks from 1");
 	end
 	if ((pCityBuildings:HasBuilding(iDummyStack2) == true) and (iStacksRequired~=2)) then
 		pCityBuildings:RemoveBuilding(iDummyStack2);
-		print("Reset Stacks from 2");
+		--print("Reset Stacks from 2");
 	end
 	if ((pCityBuildings:HasBuilding(iDummyStack3) == true) and (iStacksRequired~=3)) then
 		pCityBuildings:RemoveBuilding(iDummyStack3);
-		print("Reset Stacks from 3");
+		--print("Reset Stacks from 3");
 	end
 	if ((pCityBuildings:HasBuilding(iDummyStack4) == true) and (iStacksRequired~=4)) then
 		pCityBuildings:RemoveBuilding(iDummyStack4);
-		print("Reset Stacks from 4");
+		--print("Reset Stacks from 4");
 	end
 	if ((pCityBuildings:HasBuilding(iDummyStack5) == true) and (iStacksRequired~=5)) then
 		pCityBuildings:RemoveBuilding(iDummyStack5);
-		print("Reset Stacks from 5");
+		--print("Reset Stacks from 5");
 	end
 	if ((pCityBuildings:HasBuilding(iDummyStack6) == true) and (iStacksRequired~=6)) then
 		pCityBuildings:RemoveBuilding(iDummyStack6);
-		print("Reset Stacks from 6");
+		--print("Reset Stacks from 6");
 	end
 end
 
 function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
-	print("MTR_LyndisUA_AdjustCityDummy");
+	--print("MTR_LyndisUA_AdjustCityDummy");
 	local iStacksRequired = math.floor(iCountedTiles / iPointsPerStack);
-	print("Stacks Required: " .. iStacksRequired);
+	--print("Stacks Required: " .. iStacksRequired);
 	
 	local pCityBuildings = pCity:GetBuildings() -- Get city buildings
 	
@@ -214,12 +216,12 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 	local iPlot = pPlot:GetIndex()
 	
 	if(iStacksRequired==0) then
-		print("Zero Stacks");
+		--print("Zero Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		return --abort if 0 stacks
 	end
 	if(iStacksRequired==1) then
-		print("One Stack");
+		--print("One Stack");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack1) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack1, iPlot, 100)
@@ -227,7 +229,7 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 		return --abort if 1 stacks
 	end
 	if(iStacksRequired==2) then
-		print("Two Stacks");
+		--print("Two Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack2) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack2, iPlot, 100)
@@ -235,7 +237,7 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 		return --abort if 2 stacks
 	end
 	if(iStacksRequired==3) then
-		print("Three Stacks");
+		--print("Three Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack3) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack3, iPlot, 100)
@@ -243,7 +245,7 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 		return --abort if 3 stacks
 	end
 	if(iStacksRequired==4) then
-		print("Four Stacks");
+		--print("Four Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack4) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack4, iPlot, 100)
@@ -251,7 +253,7 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 		return --abort if 4 stacks
 	end
 	if(iStacksRequired==5) then
-		print("Five Stacks");
+		--print("Five Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack5) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack5, iPlot, 100)
@@ -259,7 +261,7 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 		return --abort if 5 stacks
 	end
 	if(iStacksRequired>=6) then
-		print("Six Stacks");
+		--print("Six Stacks");
 		MTR_LyndisUA_StripDummies(pCityBuildings, iStacksRequired);
 		if (pCityBuildings:HasBuilding(iDummyStack6) ~= true) then
 			pCity:GetBuildQueue():CreateIncompleteBuilding(iDummyStack6, iPlot, 100)
@@ -269,10 +271,10 @@ function MTR_LyndisUA_AdjustCityDummy(pCity, iCountedTiles)
 end
 
 function MTR_LyndisUA_PlayerTurnDeactivated(playerID)
-	print("MTR_LyndisUA_PlayerTurnDeactivated")
-	print("playerID: " .. playerID);
+	--print("MTR_LyndisUA_PlayerTurnDeactivated")
+	--print("playerID: " .. playerID);
 	if(tValidPlayerList[playerID]==true) then
-		print("ValidPlayer!")
+		--print("ValidPlayer!")
 		local pPlayer = Players[playerID];
 		for i, pCity in pPlayer:GetCities():Members() do --for each of the players cities
 			local tCityPlots = GetCityPlots(pCity);
@@ -280,9 +282,9 @@ function MTR_LyndisUA_PlayerTurnDeactivated(playerID)
 			if tCityPlots ~= nil then
 				for Item, pPlot in ipairs(tCityPlots) do --for each of the plots in that city
 					if (tValidTerrainOwnedList[pPlot:GetTerrainType()]~=nil) then
-						print("Valid Terrain: " .. tValidTerrainOwnedList[pPlot:GetTerrainType()]);
+						--print("Valid Terrain: " .. tValidTerrainOwnedList[pPlot:GetTerrainType()]);
 						iCountedTiles = iCountedTiles + tValidTerrainOwnedList[pPlot:GetTerrainType()];
-						print("Current Count: " .. iCountedTiles);
+						--print("Current Count: " .. iCountedTiles);
 					end
 				end
 			end

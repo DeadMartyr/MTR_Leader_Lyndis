@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_UH_Text -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-07-11 19:28:49 -->
+<GameData>
+	<LocalizedText>
+		<!--UH-->
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_LYNDIS_UH_NAME"					Text="Lyndis"/>
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_LYNDIS_UH_DESCRIPTION"			Text="Lyndis, Lady of the Wind, as a [ICON_GREATPERSON] Unique Hero. [NEWLINE][NEWLINE]Start game with this unit replacing the player's initial warrior. [NEWLINE]Scales with era but typically slightly weaker than the unit(s) of that era. [NEWLINE]Grants Combat Bonus to nearby units, similar to Great General. [NEWLINE]Upon death of a Hero, a shrine is constructed in the Capital, this shrine allows the training of another Hero in that city. No more than one instance of a specific Hero existing can belong to a Civilization at a time. [NEWLINE][NEWLINE]Does not enforce a Zone of Control. [NEWLINE]Conducting a ranged attack refunds 1 [ICON_MOVEMENT] Movement and allows unit to move after attacking from range that turn. Cannot occur more than once per turn, does not allow another attack action. [NEWLINE]Sacae's 'Call of the Wind' Ability extends to Lyndis."/>
+		
+		<!--Dummy Building-->
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UH_DUMMY_NAME"			Text="Mani Katti"/>
+		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UH_DUMMY_DESCRIPTION"	Text="The legendary blade dropped by Lyndis when she fell in battle. [NEWLINE][NEWLINE]Her soul is permanently attached to the blade, perhaps she in another life will wield the blade again."/>
+		
+		<!--Lyndis Promotion Tree-->
+		<Row Language="en_US"	Tag="LOC_PROMOTION_CLASS_MTR_LYNDIS_NAME"			Text="Lady of the Wind"/>
+		
+		<!--Lyndis Promotions-->
+		<!--Tier 1-->
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_NAME"				Text="Lyn Promotion 1 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"		Text="Lyn Promotion 1 DESC"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_NAME"				Text="Lyn Promotion 2 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"		Text="Lyn Promotion 2 DESC"/>
+		<!--Tier 2-->
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_NAME"				Text="Lyn Promotion 3 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"		Text="Lyn Promotion 3 DESC"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_NAME"				Text="Lyn Promotion 4 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"		Text="Lyn Promotion 4 DESC"/>
+		<!--Tier 3-->
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_NAME"				Text="Lyn Promotion 5 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"		Text="Lyn Promotion 5 DESC"/>
+		<!--Tier 3-->
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_NAME"				Text="Lyn Promotion 6 NAME"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_DESCRIPTION"		Text="Lyn Promotion 6 DESC"/>
+		
+		
+		<!--HERO SYSTEM ABILITIES-->
+		<!--+1-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_1_NAME"						Text="Hero Scaling (+1)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"					Text="Hero Scaling (+1)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"		Text="Hero Scaling (+1)"/>
+
+		<!--+2-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_2_NAME"						Text="Hero Scaling (+2)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"					Text="Hero Scaling (+2)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"		Text="Hero Scaling (+2)"/>
+
+		<!--+4-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_4_NAME"						Text="Hero Scaling (+4)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"					Text="Hero Scaling (+4)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"		Text="Hero Scaling (+4)"/>
+
+		<!--+8-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_8_NAME"						Text="Hero Scaling (+8)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"					Text="Hero Scaling (+8)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"		Text="Hero Scaling (+8)"/>
+
+		<!--+16-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_16_NAME"						Text="Hero Scaling (+16)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"				Text="Hero Scaling (+16)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"		Text="Hero Scaling (+16)"/>
+
+		<!--+32-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_32_NAME"						Text="Hero Scaling (+32)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"				Text="Hero Scaling (+32)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"		Text="Hero Scaling (+32)"/>
+
+		<!--+64-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_64_NAME"						Text="Hero Scaling (+64)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"				Text="Hero Scaling (+64)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"		Text="Hero Scaling (+64)"/>
+	</LocalizedText>
+</GameData>

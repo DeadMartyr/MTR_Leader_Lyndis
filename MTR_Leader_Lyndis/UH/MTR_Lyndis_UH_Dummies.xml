@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_UH_Dummies -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-07-12 10:21:55 -->
+<GameData>
+	<!--This is a Dummy Buildings used by "MTR_Lyndis_UH_Scripts.lua", it exists solely to allow the training of the Unique Hero after death/other loss-->
+
+	<Types>
+		<Row Type="BUILDING_MTR_LYNDIS_UH_DUMMY"			Kind="KIND_BUILDING"/>
+	</Types>
+
+	<Buildings>
+		<Row BuildingType="BUILDING_MTR_LYNDIS_UH_DUMMY"	Name="LOC_BUILDING_MTR_LYNDIS_UH_DUMMY_NAME"	Description="LOC_BUILDING_MTR_LYNDIS_UH_DUMMY_DESCRIPTION"	PrereqDistrict="DISTRICT_CITY_CENTER"	Cost="1"	MustPurchase="1"	EnabledByReligion="1"	InternalOnly="1"/>
+	</Buildings>
+</GameData>

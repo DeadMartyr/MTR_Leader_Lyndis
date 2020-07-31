@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MTR_Lyndis_UH -->
+<!-- Author: Angelo -->
+<!-- DateCreated: 2020-07-04 15:01:52 -->
+<GameData>
+	<Types>
+		<!--Unit Herself-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Kind="KIND_UNIT"/>
+		<!--Ability Associated with the Unit-->
+		<Row	Type="ABILITY_MTR_LYNDIS_UH"					Kind="KIND_ABILITY"/>
+		<!--Unit's Promotion Tree-->
+		<Row	Type="PROMOTION_CLASS_MTR_LYNDIS"				Kind="KIND_PROMOTION_CLASS"/>
+		<!--Individual Promotions (For Above)-->
+		<Row	Type="PROMOTION_MTR_LYNDIS_1"					Kind="KIND_PROMOTION"/>
+		<Row	Type="PROMOTION_MTR_LYNDIS_2"					Kind="KIND_PROMOTION"/>
+		<Row	Type="PROMOTION_MTR_LYNDIS_3"					Kind="KIND_PROMOTION"/>
+		<Row	Type="PROMOTION_MTR_LYNDIS_4"					Kind="KIND_PROMOTION"/>
+		<Row	Type="PROMOTION_MTR_LYNDIS_5"					Kind="KIND_PROMOTION"/>
+		<Row	Type="PROMOTION_MTR_LYNDIS_6"					Kind="KIND_PROMOTION"/>
+	</Types>
+	
+	<!-- ============================================================ -->
+	<!-- =					Core Unit Definition					= -->
+	<!-- ============================================================ -->
+	<UnitAiInfos>
+		<Row	UnitType="UNIT_MTR_LYNDIS_UH"					AiType="UNITTYPE_MELEE"/>
+	</UnitAiInfos>
+	
+	<Units>
+		<Row>
+			<UnitType>UNIT_MTR_LYNDIS_UH</UnitType>
+			<Name>LOC_UNIT_MTR_LYNDIS_UH_NAME</Name>
+			<Description>LOC_UNIT_MTR_LYNDIS_UH_DESCRIPTION</Description>
+			<PurchaseYield>YIELD_GOLD</PurchaseYield>
+			<TraitType>TRAIT_LEADER_MTR_LYNDIS_UA</TraitType>
+			<!--No Obsolete Tech/Civic or Strategic Resource needed, intended to be a single unit that scales throughout the game-->
+			<Cost>100</Cost>
+			<Maintenance>2</Maintenance>
+			<BaseMoves>2</BaseMoves>
+			<BaseSightRange>2</BaseSightRange>
+			<ZoneOfControl>false</ZoneOfControl>
+			<Domain>DOMAIN_LAND</Domain>
+			<Combat>20</Combat>
+			<FormationClass>FORMATION_CLASS_LAND_COMBAT</FormationClass>
+			<PromotionClass>PROMOTION_CLASS_MTR_LYNDIS</PromotionClass>
+			<AdvisorType>ADVISOR_CONQUEST</AdvisorType>
+		</Row>
+	</Units>
+	
+	<Unit_BuildingPrereqs>
+		<Row>
+			<Unit>UNIT_MTR_LYNDIS_UH</Unit>
+			<PrereqBuilding>BUILDING_MTR_LYNDIS_UH_DUMMY</PrereqBuilding>
+		</Row>
+	</Unit_BuildingPrereqs>
+	
+	
+	
+	
+	
+	<!-- ============================================================ -->
+	<!-- =					Unique	Promotions						= -->
+	<!-- ============================================================ -->
+	<UnitPromotionClasses>
+		<!-- Text for the Promotion Class-->
+		<Row	PromotionClassType="PROMOTION_CLASS_MTR_LYNDIS" 		Name="LOC_PROMOTION_CLASS_MTR_LYNDIS_NAME" />
+	</UnitPromotionClasses>
+	<UnitPromotions>
+		<!--Lyndis UH's Promotions-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"		Name="LOC_PROMOTION_MTR_LYNDIS_1_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"	Level="1"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"		Name="LOC_PROMOTION_MTR_LYNDIS_2_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"	Level="1"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"		Name="LOC_PROMOTION_MTR_LYNDIS_3_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"	Level="2"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"		Name="LOC_PROMOTION_MTR_LYNDIS_4_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"	Level="2"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"		Name="LOC_PROMOTION_MTR_LYNDIS_5_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"	Level="3"	Column="2"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_6"		Name="LOC_PROMOTION_MTR_LYNDIS_6_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_6_DESCRIPTION"	Level="4"	Column="2"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+	</UnitPromotions>
+	<UnitPromotionPrereqs>
+		<!--Tier 1-->
+		<!--N/A-->
+		
+		<!--Tier 2-->
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_3"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_1"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_4"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_2"/>
+		
+		<!--Tier 3-->
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_3"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_4"/>
+		
+		<!--Tier 4-->
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_6"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_5"/>
+	</UnitPromotionPrereqs>
+	<UnitPromotionModifiers>
+		<!-- Relates Modifiers To Promotions-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_6"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"/>
+	</UnitPromotionModifiers>
+	<Modifiers>
+		<!--Modifier Definitions-->
+		<!--Defines a named modifier as a specific instance of a "Modtype" (Type of Modifier)-->
+		<!--Refer to "Modifiers.xml in the base game files for a list of ModTypes-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+	</Modifiers>
+	<ModifierArguments>
+		<!--Modifier Arguments-->
+		<!--Lists Values and Arguments for the specific modifiers, what the modifiers need is dependent on the "ModType" it's of-->
+		<!--Refer to "Modifiers.xml" in the base game to correlate the ModType to it's effect, ChimpanG's Modding Companion has a list of what arguments each effect takes-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	Name="Amount"	Value="1"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"	Name="Amount"	Value="2"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"	Name="Amount"	Value="3"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"	Name="Amount"	Value="4"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"	Name="Amount"	Value="5"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"	Name="Amount"	Value="6"/>
+	</ModifierArguments>
+	<RequirementSets>
+		<!--Criteria for Promotion Effects to be active-->
+		<Row	RequirementSetId="REQSET_MTR_LYNDIS_1"			RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<!--Requirements inside Requirement Sets -->
+	</RequirementSetRequirements>
+	<Requirements>
+		
+	</Requirements>
+	<RequirementArguments>
+		<!-- -->
+	</RequirementArguments>
+	<ModifierStrings>
+		<!-- -->
+	</ModifierStrings>
+	
+	
+	
+	
+	<!-- ============================================================ -->
+	<!-- =						HERO SYSTEM							= -->
+	<!-- ============================================================ -->
+	<Tags>
+		<Row	Tag="CLASS_MTR_LYNDIS"				Vocabulary="ABILITY_CLASS"/>
+		<!-- This'll have to be phased into it's own mod, where the Class of "Hero" is defined, and it has a scripts that screens if any heroes die, either
+				-to be tied to a dummy building that exists in the capital but only when the hero dies, if it dies then it drops "Mani Katti" as a building in the capital, if this building exists in the capital then you can "rebuild" the unit but it'll be costly
+		-->
+		<Row	Tag="CLASS_HERO"					Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<!--Handles "Hero" portion-->
+		<Row	Type="ABILITY_MTR_LYNDIS_UH"		Tag="CLASS_MTR_LYNDIS"/>
+	
+		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MELEE"/>
+		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MTR_LYNDIS"/> <!--See above for this Tag's definition-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MTR_SACAE"/> <!--This allows the script for the Sacae UA to affect this unit-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH" 			Tag="CLASS_HERO"/>
+	</TypeTags>
+	
+	<Types>
+		<Row	Type="ABILITY_MTR_HEROSCALING_1"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_2"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_4"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_8"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_16"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_32"			Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_64"			Kind="KIND_ABILITY"/>
+	</Types>
+	<!-- This is needed to make the abilities on inherently, these are going to be disabled and re-enabled through lua!-->
+	<TypeTags>
+		<Row	Type="ABILITY_MTR_HEROSCALING_1" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_2" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_4" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_8" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_16" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_32" 			Tag="CLASS_HERO"/>
+		<Row	Type="ABILITY_MTR_HEROSCALING_64" 			Tag="CLASS_HERO"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_1"		Name="LOC_ABILITY_MTR_HEROSCALING_1_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_2"		Name="LOC_ABILITY_MTR_HEROSCALING_2_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_4"		Name="LOC_ABILITY_MTR_HEROSCALING_4_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_8"		Name="LOC_ABILITY_MTR_HEROSCALING_8_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_16"	Name="LOC_ABILITY_MTR_HEROSCALING_16_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_32"	Name="LOC_ABILITY_MTR_HEROSCALING_32_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_64"	Name="LOC_ABILITY_MTR_HEROSCALING_64_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_1"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_2"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_4"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_8"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_16"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_32"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"/>
+		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_64"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"/>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
+	</Modifiers>
+	<ModifierArguments>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		Name="Amount"	Value="1"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		Name="Amount"	Value="2"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		Name="Amount"	Value="4"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		Name="Amount"	Value="8"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	Name="Amount"	Value="16"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	Name="Amount"	Value="32"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	Name="Amount"	Value="64"/>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"/>
+	</ModifierStrings>
+</GameData>
