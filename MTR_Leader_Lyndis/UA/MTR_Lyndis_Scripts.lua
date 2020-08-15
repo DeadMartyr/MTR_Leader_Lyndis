@@ -145,7 +145,7 @@ function MTR_LyndisUA_CityTileOwnershipChanged(owner, cityID)
 	--print(cityID);
 	
 	if(tValidPlayerList[owner]==true) then
-		print("ValidPlayer!")
+		--print("ValidPlayer!")
 		local pPlayer = Players[owner];
 		local pCity = pPlayer:GetCities():FindID(cityID);
 		local tCityPlots = GetCityPlots(pCity)

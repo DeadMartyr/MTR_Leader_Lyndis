@@ -33,41 +33,5 @@
 		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_NAME"				Text="Lyn Promotion 6 NAME"/>
 		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_DESCRIPTION"		Text="Lyn Promotion 6 DESC"/>
 		
-		
-		<!--HERO SYSTEM ABILITIES-->
-		<!--+1-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_1_NAME"						Text="Hero Scaling (+1)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"					Text="Hero Scaling (+1)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"		Text="Hero Scaling (+1)"/>
-
-		<!--+2-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_2_NAME"						Text="Hero Scaling (+2)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"					Text="Hero Scaling (+2)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"		Text="Hero Scaling (+2)"/>
-
-		<!--+4-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_4_NAME"						Text="Hero Scaling (+4)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"					Text="Hero Scaling (+4)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"		Text="Hero Scaling (+4)"/>
-
-		<!--+8-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_8_NAME"						Text="Hero Scaling (+8)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"					Text="Hero Scaling (+8)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"		Text="Hero Scaling (+8)"/>
-
-		<!--+16-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_16_NAME"						Text="Hero Scaling (+16)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"				Text="Hero Scaling (+16)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"		Text="Hero Scaling (+16)"/>
-
-		<!--+32-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_32_NAME"						Text="Hero Scaling (+32)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"				Text="Hero Scaling (+32)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"		Text="Hero Scaling (+32)"/>
-
-		<!--+64-->
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_64_NAME"						Text="Hero Scaling (+64)"/>
-		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"				Text="Hero Scaling (+64)"/>
-		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"		Text="Hero Scaling (+64)"/>
 	</LocalizedText>
 </GameData>

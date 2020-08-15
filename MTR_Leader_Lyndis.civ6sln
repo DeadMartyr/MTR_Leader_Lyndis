@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "MTR_Leader_Lyndis", "MTR_Leader_Lyndis\MTR_Leader_Lyndis.civ6proj", "{06433EA0-85B4-4F49-BA0C-C57B1610424F}"
 EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "MTR_Civilization_Sacae", "..\MTR_Civilization_Sacae\MTR_Civilization_Sacae\MTR_Civilization_Sacae.civ6proj", "{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}"
+EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "MTR_System_UniqueHeroes", "..\MTR_System_UniqueHeroes\MTR_System_UniqueHeroes.civ6proj", "{F28248BA-2455-4DA0-970B-7DAC4C83C116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Civ6 = Default|Civ6
@@ -12,6 +16,10 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{06433EA0-85B4-4F49-BA0C-C57B1610424F}.Default|Civ6.ActiveCfg = Default|Civ6
 		{06433EA0-85B4-4F49-BA0C-C57B1610424F}.Default|Civ6.Build.0 = Default|Civ6
+		{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}.Default|Civ6.ActiveCfg = Default|Civ6
+		{D654C693-E1A6-4A9A-89D0-7E93EA57D76C}.Default|Civ6.Build.0 = Default|Civ6
+		{F28248BA-2455-4DA0-970B-7DAC4C83C116}.Default|Civ6.ActiveCfg = Default|Civ6
+		{F28248BA-2455-4DA0-970B-7DAC4C83C116}.Default|Civ6.Build.0 = Default|Civ6
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

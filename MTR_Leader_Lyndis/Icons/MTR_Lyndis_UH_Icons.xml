@@ -14,15 +14,7 @@
 	</IconTextureAtlases>
 
 	<IconDefinitions>
-		<Row Name="ICON_UNIT_MTR_LYNDIS_UH"						Atlas="ICON_ATLAS_MTR_LYNDIS_UH"	Index="0"/>
-
-		<!--LyndisUH DummyBuilding Icon-->
-		<!--
-			The Leader Icon Atlas has the needed sizes 
-			and can be used as a placeholder for it, as far as I can tell:
-			-32x32 used in City Buildings list
-			-??x?? used in Civpedia Building Requirement for the UH
-		-->
-		<Row Name="ICON_BUILDING_MTR_LYNDIS_UH_DUMMY"			Atlas="ICON_ATLAS_MTR_LYNDIS"		Index="0"/>
+		<Row	Name="ICON_UNIT_MTR_LYNDIS_UH"						Atlas="ICON_ATLAS_MTR_LYNDIS_UH"	Index="0"/>
+		<Row	Name="ICON_BUILDING_MTR_LYNDIS_UH_DUMMY"			Atlas="ICON_ATLAS_MTR_LYNDIS_UH"	Index="0"/>
 	</IconDefinitions>
 </GameData>

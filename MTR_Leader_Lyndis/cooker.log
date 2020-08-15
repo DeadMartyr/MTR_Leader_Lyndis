@@ -7,7 +7,7 @@ Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'MTR_Lyndis_UH'
 Load finished for: 'MTR_Lyndis_UH' in 0.003 seconds
 Cook finished for: 'MTR_Lyndis_UH' in 0.014 seconds
-Disk write finished for: 'MTR_Lyndis_UH' in 0.073 seconds
+Disk write finished for: 'MTR_Lyndis_UH' in 0.066 seconds
 Cleanup finished for: 'MTR_Lyndis_UH' in 0.000 seconds
 XLP cook completed with success.
-Cook completed in 0.111 seconds
+Cook completed in 0.102 seconds

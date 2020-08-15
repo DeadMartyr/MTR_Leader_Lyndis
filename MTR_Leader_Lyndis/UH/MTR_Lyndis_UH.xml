@@ -18,6 +18,20 @@
 		<Row	Type="PROMOTION_MTR_LYNDIS_5"					Kind="KIND_PROMOTION"/>
 		<Row	Type="PROMOTION_MTR_LYNDIS_6"					Kind="KIND_PROMOTION"/>
 	</Types>
+
+	<Tags>
+		<Row	Tag="CLASS_MTR_LYNDIS"							Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row	Type="ABILITY_MTR_LYNDIS_UH"					Tag="CLASS_MTR_LYNDIS"/>
+		
+		<!--
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MELEE"/>
+		-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_LYNDIS"/><!--See above for this Tag's definition-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_SACAE"/><!--This allows the script for the Sacae UA to affect this unit-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH" 						Tag="CLASS_HERO"/><!--This allows the HERO System to act on this unit-->
+	</TypeTags>
 	
 	<!-- ============================================================ -->
 	<!-- =					Core Unit Definition					= -->
@@ -40,7 +54,9 @@
 			<BaseSightRange>2</BaseSightRange>
 			<ZoneOfControl>false</ZoneOfControl>
 			<Domain>DOMAIN_LAND</Domain>
-			<Combat>20</Combat>
+			<Combat>18</Combat>
+			<RangedCombat>14</RangedCombat>
+			<Range>0</Range>
 			<FormationClass>FORMATION_CLASS_LAND_COMBAT</FormationClass>
 			<PromotionClass>PROMOTION_CLASS_MTR_LYNDIS</PromotionClass>
 			<AdvisorType>ADVISOR_CONQUEST</AdvisorType>
@@ -102,7 +118,7 @@
 		<!--Modifier Definitions-->
 		<!--Defines a named modifier as a specific instance of a "Modtype" (Type of Modifier)-->
 		<!--Refer to "Modifiers.xml in the base game files for a list of ModTypes-->
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
 		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
 		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
 		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
@@ -135,93 +151,5 @@
 	</RequirementArguments>
 	<ModifierStrings>
 		<!-- -->
-	</ModifierStrings>
-	
-	
-	
-	
-	<!-- ============================================================ -->
-	<!-- =						HERO SYSTEM							= -->
-	<!-- ============================================================ -->
-	<Tags>
-		<Row	Tag="CLASS_MTR_LYNDIS"				Vocabulary="ABILITY_CLASS"/>
-		<!-- This'll have to be phased into it's own mod, where the Class of "Hero" is defined, and it has a scripts that screens if any heroes die, either
-				-to be tied to a dummy building that exists in the capital but only when the hero dies, if it dies then it drops "Mani Katti" as a building in the capital, if this building exists in the capital then you can "rebuild" the unit but it'll be costly
-		-->
-		<Row	Tag="CLASS_HERO"					Vocabulary="ABILITY_CLASS"/>
-	</Tags>
-	<TypeTags>
-		<!--Handles "Hero" portion-->
-		<Row	Type="ABILITY_MTR_LYNDIS_UH"		Tag="CLASS_MTR_LYNDIS"/>
-	
-		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MELEE"/>
-		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MTR_LYNDIS"/> <!--See above for this Tag's definition-->
-		<Row	Type="UNIT_MTR_LYNDIS_UH"			Tag="CLASS_MTR_SACAE"/> <!--This allows the script for the Sacae UA to affect this unit-->
-		<Row	Type="UNIT_MTR_LYNDIS_UH" 			Tag="CLASS_HERO"/>
-	</TypeTags>
-	
-	<Types>
-		<Row	Type="ABILITY_MTR_HEROSCALING_1"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_2"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_4"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_8"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_16"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_32"			Kind="KIND_ABILITY"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_64"			Kind="KIND_ABILITY"/>
-	</Types>
-	<!-- This is needed to make the abilities on inherently, these are going to be disabled and re-enabled through lua!-->
-	<TypeTags>
-		<Row	Type="ABILITY_MTR_HEROSCALING_1" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_2" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_4" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_8" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_16" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_32" 			Tag="CLASS_HERO"/>
-		<Row	Type="ABILITY_MTR_HEROSCALING_64" 			Tag="CLASS_HERO"/>
-	</TypeTags>
-	<UnitAbilities>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_1"		Name="LOC_ABILITY_MTR_HEROSCALING_1_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_2"		Name="LOC_ABILITY_MTR_HEROSCALING_2_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_4"		Name="LOC_ABILITY_MTR_HEROSCALING_4_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_8"		Name="LOC_ABILITY_MTR_HEROSCALING_8_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_16"	Name="LOC_ABILITY_MTR_HEROSCALING_16_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_32"	Name="LOC_ABILITY_MTR_HEROSCALING_32_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_64"	Name="LOC_ABILITY_MTR_HEROSCALING_64_NAME"	Description="LOC_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"/>
-	</UnitAbilities>
-	<UnitAbilityModifiers>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_1"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_2"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_4"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_8"		ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_16"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_32"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"/>
-		<Row	UnitAbilityType="ABILITY_MTR_HEROSCALING_64"	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"/>
-	</UnitAbilityModifiers>
-	<Modifiers>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	ModifierType="MODIFIER_UNIT_ADJUST_BASE_COMBAT_STRENGTH"/>
-	</Modifiers>
-	<ModifierArguments>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		Name="Amount"	Value="1"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		Name="Amount"	Value="2"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		Name="Amount"	Value="4"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		Name="Amount"	Value="8"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	Name="Amount"	Value="16"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	Name="Amount"	Value="32"/>
-		<Row 	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	Name="Amount"	Value="64"/>
-	</ModifierArguments>
-	<ModifierStrings>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_1"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_1_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_2"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_2_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_4"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_4_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_8"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_8_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_16"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_16_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_32"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_32_DESCRIPTION"/>
-		<Row	ModifierId="MODIFIER_ABILITY_MTR_HEROSCALING_64"	Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_HEROSCALING_64_DESCRIPTION"/>
 	</ModifierStrings>
 </GameData>
