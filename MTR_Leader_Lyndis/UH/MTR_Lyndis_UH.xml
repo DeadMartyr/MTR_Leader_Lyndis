@@ -16,7 +16,6 @@
 		<Row	Type="PROMOTION_MTR_LYNDIS_3"					Kind="KIND_PROMOTION"/>
 		<Row	Type="PROMOTION_MTR_LYNDIS_4"					Kind="KIND_PROMOTION"/>
 		<Row	Type="PROMOTION_MTR_LYNDIS_5"					Kind="KIND_PROMOTION"/>
-		<Row	Type="PROMOTION_MTR_LYNDIS_6"					Kind="KIND_PROMOTION"/>
 	</Types>
 
 	<Tags>
@@ -25,12 +24,10 @@
 	<TypeTags>
 		<Row	Type="ABILITY_MTR_LYNDIS_UH"					Tag="CLASS_MTR_LYNDIS"/>
 		
-		<!--
-		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MELEE"/>
-		-->
-		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_LYNDIS"/><!--See above for this Tag's definition-->
-		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_SACAE"/><!--This allows the script for the Sacae UA to affect this unit-->
-		<Row	Type="UNIT_MTR_LYNDIS_UH" 						Tag="CLASS_HERO"/><!--This allows the HERO System to act on this unit-->
+		
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_LYNDIS"/>			<!--See above for this Tag's definition-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH"						Tag="CLASS_MTR_SACAE_UAINCLUDE"/>   <!--This allows the Sacae Script to affect this unit as it looks for this class as an alternate option-->
+		<Row	Type="UNIT_MTR_LYNDIS_UH" 						Tag="CLASS_HERO"/>					<!--This allows the HERO System to act on this unit-->
 	</TypeTags>
 	
 	<!-- ============================================================ -->
@@ -55,7 +52,7 @@
 			<ZoneOfControl>false</ZoneOfControl>
 			<Domain>DOMAIN_LAND</Domain>
 			<Combat>18</Combat>
-			<RangedCombat>14</RangedCombat>
+			<RangedCombat>15</RangedCombat>
 			<Range>0</Range>
 			<FormationClass>FORMATION_CLASS_LAND_COMBAT</FormationClass>
 			<PromotionClass>PROMOTION_CLASS_MTR_LYNDIS</PromotionClass>
@@ -79,77 +76,192 @@
 	<!-- ============================================================ -->
 	<UnitPromotionClasses>
 		<!-- Text for the Promotion Class-->
-		<Row	PromotionClassType="PROMOTION_CLASS_MTR_LYNDIS" 		Name="LOC_PROMOTION_CLASS_MTR_LYNDIS_NAME" />
+		<Row	PromotionClassType="PROMOTION_CLASS_MTR_LYNDIS" 	Name="LOC_PROMOTION_CLASS_MTR_LYNDIS_NAME" />
 	</UnitPromotionClasses>
 	<UnitPromotions>
 		<!--Lyndis UH's Promotions-->
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"		Name="LOC_PROMOTION_MTR_LYNDIS_1_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"	Level="1"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"		Name="LOC_PROMOTION_MTR_LYNDIS_2_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"	Level="1"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"		Name="LOC_PROMOTION_MTR_LYNDIS_3_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"	Level="2"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"		Name="LOC_PROMOTION_MTR_LYNDIS_4_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"	Level="2"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"		Name="LOC_PROMOTION_MTR_LYNDIS_5_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"	Level="3"	Column="2"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_6"		Name="LOC_PROMOTION_MTR_LYNDIS_6_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_6_DESCRIPTION"	Level="4"	Column="2"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
-	</UnitPromotions>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"			Name="LOC_PROMOTION_MTR_LYNDIS_1_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"	Level="1"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"			Name="LOC_PROMOTION_MTR_LYNDIS_2_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"	Level="1"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"			Name="LOC_PROMOTION_MTR_LYNDIS_3_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"	Level="2"	Column="1"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"			Name="LOC_PROMOTION_MTR_LYNDIS_4_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"	Level="2"	Column="3"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"			Name="LOC_PROMOTION_MTR_LYNDIS_5_NAME"	Description="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"	Level="3"	Column="2"	PromotionClass="PROMOTION_CLASS_MTR_LYNDIS"/>
+		</UnitPromotions>
 	<UnitPromotionPrereqs>
 		<!--Tier 1-->
 		<!--N/A-->
 		
 		<!--Tier 2-->
-		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_3"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_1"/>
-		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_4"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_2"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_3"				PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_1"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_4"				PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_2"/>
 		
 		<!--Tier 3-->
-		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_3"/>
-		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_4"/>
-		
-		<!--Tier 4-->
-		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_6"			PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_5"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"				PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_3"/>
+		<Row	UnitPromotion="PROMOTION_MTR_LYNDIS_5"				PrereqUnitPromotion="PROMOTION_MTR_LYNDIS_4"/>
 	</UnitPromotionPrereqs>
 	<UnitPromotionModifiers>
 		<!-- Relates Modifiers To Promotions-->
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"/>
-		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_6"		ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_1"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"/>
+
+		<!--Sacae's Blessing Promotion-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_CULTUREONKILL"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_2"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_EXPMOD"/>
+		
+		<!--Somersault Promotion-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_ATTACKMOVE"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_3"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_IGNOREZOC"/>
+
+		<!--Laws of Sacae Promotion-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_MOVEMENTBOOST"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_4"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_COMBATBOOST"/>
+		
+		<!--Spirit of Hanon Promotion-->
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_RANGEBOOST"/>
+		<Row	UnitPromotionType="PROMOTION_MTR_LYNDIS_5"			ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_NUMATTACKS"/>
 	</UnitPromotionModifiers>
 	<Modifiers>
 		<!--Modifier Definitions-->
 		<!--Defines a named modifier as a specific instance of a "Modtype" (Type of Modifier)-->
 		<!--Refer to "Modifiers.xml in the base game files for a list of ModTypes-->
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<!--Mulagir Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"				ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
+
+		<!--Sacae's Blessing Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_CULTUREONKILL"	ModifierType="MODIFIER_UNIT_ADJUST_POST_COMBAT_YIELD"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_EXPMOD"			ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER"/>
+		
+		<!--Somersault Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_ATTACKMOVE"		ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_ATTACK_AND_MOVE"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_IGNOREZOC"		ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_IGNORE_ZOC"/>
+
+		<!--Laws of Sacae Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_MOVEMENTBOOST"	ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_COMBATBOOST"	ModifierType="MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH"						SubjectRequirementSetId="REQSET_MTR_OPPONENT_BELOW40HP"/>
+		
+		<!--Spirit of Hanon Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_RANGEBOOST"		ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_NUMATTACKS"		ModifierType="MODIFIER_UNIT_ADJUST_NUM_ATTACKS"/>
 	</Modifiers>
 	<ModifierArguments>
 		<!--Modifier Arguments-->
 		<!--Lists Values and Arguments for the specific modifiers, what the modifiers need is dependent on the "ModType" it's of-->
 		<!--Refer to "Modifiers.xml" in the base game to correlate the ModType to it's effect, ChimpanG's Modding Companion has a list of what arguments each effect takes-->
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"	Name="Amount"	Value="1"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2"	Name="Amount"	Value="2"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3"	Name="Amount"	Value="3"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4"	Name="Amount"	Value="4"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5"	Name="Amount"	Value="5"/>
-		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_6"	Name="Amount"	Value="6"/>
+		
+		<!--Mulagir Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_1"					Name="Amount"	Value="1"/>
+
+		<!--Sacae's Blessing Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_CULTUREONKILL"		Name="OnlyWhenDefeatedEarlierEraUnit"	Value="false"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_CULTUREONKILL"		Name="PercentDefeatedStrength"			Value="40"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_CULTUREONKILL"		Name="YieldType"						Value="YIELD_CULTURE"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_2_EXPMOD"				Name="Amount"							Value="40"/>
+		
+		<!--Somersault Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_ATTACKMOVE"			Name="CanMove"	Value="true"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_3_IGNOREZOC"			Name="Ignore"	Value="true"/>
+
+		<!--Laws of Sacae Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_MOVEMENTBOOST"		Name="Amount"	Value="1"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_4_COMBATBOOST"		Name="Amount"	Value="10"/>
+
+		<!--Spirit of Hanon Promotion-->
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_RANGEBOOST"			Name="Amount"	Value="1"/>
+		<Row	ModifierId="MODIFIER_PROMOTION_MTR_LYNDIS_5_NUMATTACKS"			Name="Amount"	Value="1"/>
 	</ModifierArguments>
 	<RequirementSets>
 		<!--Criteria for Promotion Effects to be active-->
-		<Row	RequirementSetId="REQSET_MTR_LYNDIS_1"			RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
+		<Row	RequirementSetId="REQSET_MTR_OPPONENT_BELOW40HP"	RequirementSetType="REQUIREMENTSET_TEST_ALL"/>
 	</RequirementSets>
 	<RequirementSetRequirements>
 		<!--Requirements inside Requirement Sets -->
+		<Row	RequirementSetId="REQSET_MTR_OPPONENT_BELOW40HP"	RequirementId="PLAYER_IS_ATTACKER_REQUIREMENTS"/>
+		<Row	RequirementSetId="REQSET_MTR_OPPONENT_BELOW40HP"	RequirementId="REQ_MTR_OPPONENT_BELOW40HP"/>
 	</RequirementSetRequirements>
 	<Requirements>
-		
+		<!-- -->
+		<Row	RequirementId="REQ_MTR_OPPONENT_BELOW40HP"			RequirementType="REQUIREMENT_UNIT_DAMAGE_MINIMUM"/>
 	</Requirements>
 	<RequirementArguments>
 		<!-- -->
+		<Row	RequirementId="REQ_MTR_OPPONENT_BELOW40HP"			Name="MinimumAmount"	Value="60"/>
 	</RequirementArguments>
 	<ModifierStrings>
 		<!-- -->
+		
+	</ModifierStrings>
+
+
+
+	<!-- ==================================================================================================================== -->
+	<!-- =			Dummy Abilities (For use in scripts)																	= -->
+	<!-- =			Script sets range to zero after ranged attack and grants movement if somersault promotion is on unit	= -->
+	<!-- ==================================================================================================================== -->
+	<Types>
+		<!--Range Deductions-->
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"				Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"				Kind="KIND_ABILITY"/>
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"				Kind="KIND_ABILITY"/>
+		
+		<!--Movement Bonuses-->
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"			Kind="KIND_ABILITY"/>
+	</Types>
+
+	<TypeTags>
+		<!--Range Deductions-->
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_1" 			Tag="CLASS_MTR_LYNDIS"/>
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_2" 			Tag="CLASS_MTR_LYNDIS"/>
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTRANGE_4" 			Tag="CLASS_MTR_LYNDIS"/>
+
+		<!--Movement Deductions-->
+		<Row	Type="ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1" 			Tag="CLASS_MTR_LYNDIS"/>
+	</TypeTags>
+
+	<UnitAbilities>
+		<!--Range Deductions-->
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"				Name="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_NAME"				Description="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_DESCRIPTION"			Inactive="true"/>
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"				Name="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_NAME"				Description="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_DESCRIPTION"			Inactive="true"/>
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"				Name="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_NAME"				Description="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_DESCRIPTION"			Inactive="true"/>
+
+		<!--Movement Bonuses-->
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"			Name="LOC_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_NAME"				Description="LOC_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_DESCRIPTION"		Inactive="true"/>
+	</UnitAbilities>
+
+	<UnitAbilityModifiers>
+		<!--Range Deductions-->
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"				ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"/>
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"				ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"/>
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"				ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"/>
+
+		<!--Movement Bonuses-->
+		<Row	UnitAbilityType="ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"			ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"/>
+	</UnitAbilityModifiers>
+
+	<Modifiers>
+		<!--Range Deductions-->
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"			ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"			ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"			ModifierType="MODIFIER_UNIT_ADJUST_ATTACK_RANGE"/>
+
+		<!--Movement Bonuses-->
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"		ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT"/>
+	</Modifiers>
+
+	<ModifierArguments>
+		<!--Range Deductions-->
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"			Name="Amount"	Value="-1"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"			Name="Amount"	Value="-2"/>
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"			Name="Amount"	Value="-4"/>
+
+		<!--Movement Bonuses-->
+		<Row 	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"		Name="Amount"	Value="-1"/>
+	</ModifierArguments>
+
+	<ModifierStrings>
+		<!--Range Deductions-->
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1"			Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2"			Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_DESCRIPTION"/>
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4"			Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_DESCRIPTION"/>
+
+		<!--Movement Bonuses-->
+		<Row	ModifierId="MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1"		Context="Preview"	Text="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_DESCRIPTION"/>
 	</ModifierStrings>
 </GameData>

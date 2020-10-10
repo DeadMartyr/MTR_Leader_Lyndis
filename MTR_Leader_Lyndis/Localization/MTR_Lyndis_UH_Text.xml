@@ -6,7 +6,7 @@
 	<LocalizedText>
 		<!--UH-->
 		<Row Language="en_US"	Tag="LOC_UNIT_MTR_LYNDIS_UH_NAME"					Text="Lyndis"/>
-		<Row Language="en_US"	Tag="LOC_UNIT_MTR_LYNDIS_UH_DESCRIPTION"			Text="Lyndis, Lady of the Wind, as a [ICON_GREATPERSON] Unique Hero. [NEWLINE][NEWLINE]Start game with this unit replacing the player's initial warrior. [NEWLINE]Scales with era but typically slightly weaker than the unit(s) of that era. [NEWLINE]Grants Combat Bonus to nearby units, similar to Great General. [NEWLINE]Upon death of a Hero, a shrine is constructed in the Capital, this shrine allows the training of another Hero in that city. No more than one instance of a specific Hero existing can belong to a Civilization at a time. [NEWLINE][NEWLINE]Does not enforce a Zone of Control. [NEWLINE]Conducting a ranged attack refunds 1 [ICON_MOVEMENT] Movement and allows unit to move after attacking from range that turn. Cannot occur more than once per turn, does not allow another attack action. [NEWLINE]Sacae's 'Call of the Wind' Ability extends to Lyndis."/>
+		<Row Language="en_US"	Tag="LOC_UNIT_MTR_LYNDIS_UH_DESCRIPTION"			Text="Lyndis, Lady of the Wind, as a [ICON_GREATPERSON] Unique Hero. [NEWLINE][NEWLINE]Start game with this unit replacing the player's initial warrior. [NEWLINE]Scales with era but typically slightly weaker than the unit(s) of that era. [NEWLINE]Upon death of a Hero, a shrine is constructed in the Capital, this shrine allows the training of another Hero in that city. [NEWLINE]No more than one instance of a specific Hero existing can belong to a Civilization at a time. [NEWLINE][NEWLINE]Does not enforce a Zone of Control. [NEWLINE]Sacae's 'Call of the Wind' Ability extends to Lyndis."/>
 		
 		<!--Dummy Building-->
 		<Row Language="en_US"	Tag="LOC_BUILDING_MTR_LYNDIS_UH_DUMMY_NAME"			Text="Mani Katti"/>
@@ -17,21 +17,36 @@
 		
 		<!--Lyndis Promotions-->
 		<!--Tier 1-->
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_NAME"				Text="Lyn Promotion 1 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"		Text="Lyn Promotion 1 DESC"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_NAME"				Text="Lyn Promotion 2 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"		Text="Lyn Promotion 2 DESC"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_NAME"				Text="Mulagir"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_1_DESCRIPTION"		Text="Grants +1 [ICON_Range] Range, enabling use of Lyndis' [ICON_Ranged] Ranged Strike. However, after a [ICON_Ranged] Ranged Strike Lyndis cannot perform another until the next turn, even if Lyndis has additional attacks."/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_NAME"				Text="Sacae's Blessing"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_2_DESCRIPTION"		Text="Grants [ICON_Culture] Culture equal to 40% of the [ICON_Strength] strength of any unit defeated by Lyndis. Grants 40% Experience from all combat."/>
 		<!--Tier 2-->
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_NAME"				Text="Lyn Promotion 3 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"		Text="Lyn Promotion 3 DESC"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_NAME"				Text="Lyn Promotion 4 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"		Text="Lyn Promotion 4 DESC"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_NAME"				Text="Somersault"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_3_DESCRIPTION"		Text="Enables Lyndis to ignore enemy Zones of Control, move again after combat, and after a [ICON_Ranged] Ranged Strike restores Lyndis' [ICON_Movement] Movement to 1 below it's max value."/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_NAME"				Text="Laws of Sacae"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_4_DESCRIPTION"		Text="Grants +1 [ICON_Movement] Movement. Grants bonus +10 [ICON_Strength] strength when initiating against units under 40% [ICON_Damaged] health."/>
 		<!--Tier 3-->
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_NAME"				Text="Lyn Promotion 5 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"		Text="Lyn Promotion 5 DESC"/>
-		<!--Tier 3-->
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_NAME"				Text="Lyn Promotion 6 NAME"/>
-		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_6_DESCRIPTION"		Text="Lyn Promotion 6 DESC"/>
-		
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_NAME"				Text="Spirit of Hanon"/>
+		<Row Language="en_US"	Tag="LOC_PROMOTION_MTR_LYNDIS_5_DESCRIPTION"		Text="Grants +1 [ICON_Range] Range and enables Lyndis to engage in combat twice in the same turn if [ICON_Movement] Movement permits."/>
+
+
+		<!--DUMMY ABILITIES-->
+		<!---1 Range-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_NAME"						Text="Range Reduction (-1)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_DESCRIPTION"				Text="Range Reduction (-1)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_1_DESCRIPTION"		Text="Range Reduction (-1)"/>
+		<!---2 Range-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_NAME"						Text="Range Reduction (-2)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_DESCRIPTION"				Text="Range Reduction (-2)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_2_DESCRIPTION"		Text="Range Reduction (-2)"/>
+		<!---4 Range-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_NAME"						Text="Range Reduction (-4)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_DESCRIPTION"				Text="Range Reduction (-4)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTRANGE_4_DESCRIPTION"		Text="Range Reduction (-4)"/>
+		<!---1 Movement-->
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_NAME"					Text="Movement Reduction (-1)"/>
+		<Row Language="en_US"	Tag="LOC_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_DESCRIPTION"			Text="Movement Reduction (-1)"/>
+		<Row Language="en_US"	Tag="LOC_MODIFIER_ABILITY_MTR_LYNDIS_DEDUCTMOVEMENT_1_DESCRIPTION"	Text="Movement Reduction (-1)"/>
 	</LocalizedText>
 </GameData>
